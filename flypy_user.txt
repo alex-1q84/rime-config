@@ -1,0 +1,105 @@
+# coding: utf-8
+# 小鹤音形用户词库（默认和系统词条重码时居后）
+# 该文件以UTF-8编码保存
+# 编码各字段以制表符（Tab）分隔
+# 编码格式：字词Tab编码Tab权重（权重决定重码的次序，权重大则居前，无重码则无需权重）
+#
+#    === 强调一下 ===
+#
+#   词条和编码之间的不是空格，而是Tab符，如果你不知道，就复制下面编码中的空白处
+#   或者按住键盘 G 键，切换到功能键盘，使用上面的Tab键
+#
+#    ================
+#
+# 如两个用户词重码，则需加权重排序，权重大者居前，如下：
+#
+# 同文	tw	90
+# 提问	tw	30
+#
+#    ================
+# 虽然文本码表编辑较为方便，但不适合导入大量条目
+
+#用户词库，下一行后开始添加。切换方案或部署后生效
+# no comment
+# names
+张红豆	vhd
+小菜	xncd
+董事长	duv
+董雍佳	dyj
+蔡戈俊	cgj
+周德阳	vdy
+刘志龙	lvl
+夏黎锟	xlk
+缪泽浩	mzh
+林志鹏	lvp
+刘荔华	llh
+刘路坷	llk
+蒋哲臣	jvi
+洪炳林	hbl
+高俊	gcj
+白连伟	blw
+项宇翔	xyx
+李勇	liys
+赵利明	vlm
+刘春华	lih
+曹狄炯	cdj
+袁亚飞	yyf
+朱江	vujl
+金鑫	jbxb
+李鑫	lixb
+夏冉	xxrj
+# ----------
+接口	jpkz
+集成	jiig
+阿尔法	aefa
+即时	jiui
+即时配	jspw
+延后	yjhz
+语义	yuyi
+试用	uiys
+试用期	uyqi
+附件	fujm
+前端	qmdr
+是的	uide
+小件员	xjyr
+集包	jibc
+统一	tsyi
+主干	vugj
+链接	lmjp
+小时	xnui
+里程碑	lcb
+里程	liig
+减免	jmmm
+斐波那契	fbnq
+百世	bdui
+简历	jmli
+事件	uijm
+吴思成	wsig
+线程	xmig
+赋值	fuvi
+集群	jiqy
+告警	gcjk
+字符串	zfir
+事务	uiwu
+压测	yace
+用例	ysli
+复盘	fupj
+初始化	iuhx
+基于	jiyu
+常量	ihll
+原型	yrxk
+程度	igdu
+遍历	bmli
+协作	xpzo
+二叉树	eiuu
+梳理	uuli
+即可	jike
+重置	isvi
+时效	uixn
+巡检	xyjm
+收集	uzji
+运维	yyww
+垅	lstb
+翀	isxv
+
+# vim: set noexpandtab:
