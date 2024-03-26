@@ -118,3 +118,6 @@ target/
 
 # Rime
 user.yaml
+LOG
+*/LOG
+*/LOG.old

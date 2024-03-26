@@ -70,9 +70,9 @@ speller:
 translator:
   dictionary: flypyplus
   enable_charset_filter: false
-  enable_completion: false
-  enable_sentence: false
-  enable_user_dict: false
+  enable_completion: true
+  enable_sentence: true
+  enable_user_dict: true
   disable_user_dict_for_patterns:
     - "^z.*$"
   
@@ -91,24 +91,24 @@ custom_phraseXT:
   dictionary: ""
   user_dict: flypy_sys
   db_class: stabledb
-  enable_sentence: false
-  enable_completion: false
+  enable_sentence: true
+  enable_completion: true
   initial_quality: -1 #本表词和系统词重码居后
 
 custom_phraseVD:
   dictionary: ""
   user_dict: flypy_top
   db_class: stabledb
-  enable_sentence: false
-  enable_completion: false
+  enable_sentence: true
+  enable_completion: true
   initial_quality: 0 #用户词和系统词重码 置顶
   
 custom_phraseYH:
   dictionary: ""
   user_dict: flypy_user
   db_class: stabledb
-  enable_sentence: false
-  enable_completion: false
+  enable_sentence: true
+  enable_completion: true
   initial_quality: -1 #用户词和系统词重码居后
 
 reverse_lookup:

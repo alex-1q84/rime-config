@@ -42,12 +42,24 @@
 李勇	liys
 赵利明	vlm
 刘春华	lih
+丁莉	dkli
 曹狄炯	cdj
 袁亚飞	yyf
 朱江	vujl
 金鑫	jbxb
 李鑫	lixb
 夏冉	xxrj
+訸	hewh
+潘银鋆	pyj
+董泰羊	dty
+何剑忠	hjv
+唐汉庄	thv
+菅传忠	jiv
+陈阳	ifyh
+占文星	vwx
+高峰	gcfg
+童鑫	tsxb
+吴思成	wsig
 # ----------
 接口	jpkz
 集成	jiig
@@ -74,7 +86,6 @@
 百世	bdui
 简历	jmli
 事件	uijm
-吴思成	wsig
 线程	xmig
 赋值	fuvi
 集群	jiqy
@@ -101,5 +112,7 @@
 运维	yyww
 垅	lstb
 翀	isxv
+包牌	bcpd
+极兔	jitu
 
 # vim: set noexpandtab:
