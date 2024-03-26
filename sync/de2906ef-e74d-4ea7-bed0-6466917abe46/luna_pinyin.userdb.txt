@@ -1,0 +1,51 @@
+# Rime user dictionary
+#@/db_name	luna_pinyin.userdb
+#@/db_type	userdb
+#@/rime_version	1.5.3
+#@/tick	68
+#@/user_id	de2906ef-e74d-4ea7-bed0-6466917abe46
+ban 	班	c=1 d=1 t=35
+ban ji 	班級	c=3 d=2.93678 t=51
+cao 	曹	c=1 d=1 t=32
+chang yang 	徜徉	c=1 d=1 t=7
+cong 	從	c=1 d=1 t=40
+da 	大	c=1 d=1 t=68
+da jia 	大家	c=1 d=1 t=53
+da jia ting 	大家庭	c=1 d=1 t=27
+da si 	大四	c=1 d=1 t=34
+dao 	到	c=2 d=1.91851 t=31
+de 	的	c=5 d=4.5218 t=49
+duo 	多	c=1 d=1 t=16
+gao feng qi 	高峯期	c=1 d=1 t=55
+geng 	更	c=1 d=1 t=15
+guo lai 	過來	c=1 d=1 t=23
+hai yang 	海洋	c=1 d=1 t=11
+hao peng you 	好朋友	c=1 d=1 t=18
+he 	和	c=1 d=1 t=52
+hen 	很	c=1 d=1 t=42
+jia ru 	加入	c=3 d=2.82807 t=45
+jie jiao 	結交	c=1 d=1 t=13
+jiu 	就	c=1 d=1 t=67
+kan 	看	c=1 d=1 t=57
+lao shi 	老師	c=2 d=1.86071 t=63
+li 	裏	c=1 d=1 t=12
+ma 	嗎	c=3 d=2.97516 t=5
+men 	們	c=3 d=2.89489 t=66
+ni hao 	你好	c=3 d=2.96536 t=6
+qing xing 	慶幸	c=1 d=1 t=43
+shi 	是	c=1 d=1 t=20
+tong xue 	同學	c=1 d=1 t=65
+wan 	玩	c=2 d=1.97045 t=62
+wen nuan 	溫暖	c=2 d=1.94649 t=48
+wo men 	我們	c=2 d=1.89583 t=41
+xiao ban 	小班	c=1 d=1 t=21
+xue 	學	c=2 d=1.99501 t=60
+yi qi 	一起	c=1 d=1 t=54
+you xing 	有幸	c=1 d=1 t=44
+you yuan 	有緣	c=1 d=1 t=29
+zai 	在	c=1 d=1 t=8
+zan men 	咱們	c=1 d=1 t=25
+zhe ge 	這個	c=3 d=2.84681 t=47
+zhi shi 	知識	c=1 d=1 t=9
+zhong 	中	c=2 d=1.98511 t=61
+zhuan xue 	轉學	c=1 d=1 t=22

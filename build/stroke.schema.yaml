@@ -2,39 +2,17 @@ __build_info:
   rime_version: 1.8.5
   timestamps:
     default: 1675621991
-    default.custom: 1711086668
-    flypy.custom: 0
-    flypy.schema: 1679453704
+    default.custom: 1711087415
     key_bindings: 1675621991
     key_bindings.custom: 0
     punctuation: 1675621991
     punctuation.custom: 0
-custom_phraseVD:
-  db_class: stabledb
-  dictionary: ""
-  enable_completion: true
-  enable_sentence: true
-  initial_quality: 0
-  user_dict: flypy_top
-custom_phraseXT:
-  db_class: stabledb
-  dictionary: ""
-  enable_completion: true
-  enable_sentence: true
-  initial_quality: "-1"
-  user_dict: flypy_sys
-custom_phraseYH:
-  db_class: stabledb
-  dictionary: ""
-  enable_completion: true
-  enable_sentence: true
-  initial_quality: "-1"
-  user_dict: flypy_user
+    stroke.custom: 0
+    stroke.schema: 1675621991
+abc_segmentor:
+  extra_tags:
+    - reverse_lookup
 engine:
-  filters:
-    - simplifier
-    - "simplifier@simplification"
-    - uniquifier
   processors:
     - ascii_composer
     - recognizer
@@ -52,18 +30,8 @@ engine:
     - fallback_segmentor
   translators:
     - punct_translator
-    - table_translator
-    - "lua_translator@date_translator"
-    - "lua_translator@time_translator"
-    - "table_translator@custom_phraseXT"
-    - "table_translator@custom_phraseVD"
-    - "table_translator@custom_phraseYH"
     - reverse_lookup_translator
-    - "history_translator@history"
-history:
-  initial_quality: 1
-  input: ";f"
-  size: 1
+    - table_translator
 key_binder:
   bindings:
     - {accept: "Control+p", send: Up, when: composing}
@@ -82,25 +50,26 @@ key_binder:
     - {accept: Tab, send: Page_Down, when: composing}
     - {accept: bracketleft, send: Page_Up, when: paging}
     - {accept: bracketright, send: Page_Down, when: has_menu}
-    - {accept: bracketleft, send: Page_Up, when: paging}
-    - {accept: bracketright, send: Page_Down, when: has_menu}
-    - {accept: comma, send: comma, when: paging}
-    - {accept: period, send: period, when: has_menu}
-    - {accept: semicolon, send: 2, when: has_menu}
-    - {accept: dollar, send: 2, when: composing}
-    - {accept: "Release+dollar", send: period, when: composing}
-    - {accept: "Release+period", send: period, when: composing}
-    - {accept: bar, send: 2, when: composing}
-    - {accept: "Release+bar", send: comma, when: composing}
-    - {accept: "Release+comma", send: comma, when: composing}
-    - {accept: Tab, send: Escape, when: composing}
-    - {accept: Caps_Lock, send: Escape, when: composing}
-    - {accept: Shift_R, send: Escape, when: composing}
-    - {accept: "Shift+space", toggle: full_shape, when: always}
-    - {accept: "Control+period", toggle: ascii_punct, when: always}
+    - {accept: d, send: n, when: always}
+    - {accept: t, send: h, when: always}
+    - {accept: j, send: h, when: always}
+    - {accept: k, send: s, when: always}
+    - {accept: l, send: p, when: always}
+    - {accept: u, send: n, when: always}
+    - {accept: i, send: z, when: always}
+    - {accept: KP_1, send: h, when: always}
+    - {accept: KP_2, send: s, when: always}
+    - {accept: KP_3, send: p, when: always}
+    - {accept: KP_4, send: n, when: always}
+    - {accept: KP_5, send: z, when: always}
+    - {accept: KP_6, send: Select, when: has_menu}
+    - {accept: KP_7, send: Select, when: has_menu}
+    - {accept: KP_8, send: Select, when: has_menu}
+    - {accept: KP_9, send: Select, when: has_menu}
+    - {accept: KP_0, send: Select, when: has_menu}
   import_preset: default
 menu:
-  page_size: 5
+  page_size: 9
 punctuator:
   full_shape:
     " ": {commit: "　"}
@@ -174,50 +143,49 @@ recognizer:
   import_preset: default
   patterns:
     email: "^[A-Za-z][-_.0-9A-Za-z]*@.*$"
-    punct: ""
-    reverse_lookup: "[a-z`]*`+[a-z`]*"
-    uppercase: ""
+    reverse_lookup: "`[a-z]*'?$"
+    uppercase: "[A-Z][-_+.'0-9A-Za-z]*$"
     url: "^(www[.]|https?:|ftp[.:]|mailto:|file:).*$|^[a-z]+[.].+$"
 reverse_lookup:
   comment_format:
-    - "xform/ / /"
-  dictionary: flypydz
+    - "xlit/hspnz/⼀⼁⼃⼂⼄/"
+  dictionary: luna_pinyin
+  preedit_format:
+    - "xform/([nl])v/$1ü/"
+    - "xform/([nl])ue/$1üe/"
+    - "xform/([jqxy])v/$1u/"
+  prefix: "`"
+  suffix: "'"
+  tips: "〔拼音〕"
 schema:
   author:
-    - "方案设计：何海峰 <flypy@qq.com>"
+    - "四季的風"
+    - "雪齋"
+    - "Kunki Chou"
+  dependencies:
+    - luna_pinyin
   description: |
-    小鹤音形主码表
+    五筆畫
+    h,s,p,n,z 代表橫、豎、撇、捺、折
 
-  name: "小鹤音形"
-  schema_id: flypy
-  version: 10.5
-simplification:
-  opencc_config: s2tw.json
-  option_name: simplification
-  tips: all
+  name: "五筆畫"
+  schema_id: stroke
+  version: 0.5
 speller:
-  alphabet: "/;zyxwvutsrqponmlkjihgfedcba"
-  auto_clear: max_length
-  auto_select: true
-  auto_select_pattern: "^;.$|^\\w{4}$"
-  finals: "/"
-  initials: "abcdefghijklmnopqrstuvwxyz;"
-  max_code_length: 4
-style:
-  horizontal: true
+  alphabet: abcdefghijklmnopqrstuvwxyz
+  delimiter: " '"
 switches:
   - name: ascii_mode
     reset: 0
+    states: ["中文", "西文"]
   - name: full_shape
-  - name: simplification
-    reset: 0
+    states: ["半角", "全角"]
   - name: ascii_punct
-    reset: 0
+    states: ["。，", "．，"]
 translator:
-  dictionary: flypy
-  disable_user_dict_for_patterns:
-    - "^z.*$"
-  enable_charset_filter: false
-  enable_completion: true
-  enable_sentence: true
-  enable_user_dict: true
+  comment_format:
+    - "xform/~//"
+    - "xlit/hspnz/⼀⼁⼃⼂⼄/"
+  dictionary: stroke
+  preedit_format:
+    - "xlit/hspnz/⼀⼁⼃⼂⼄/"

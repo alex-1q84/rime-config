@@ -2,9 +2,9 @@ __build_info:
   rime_version: 1.8.5
   timestamps:
     default: 1675621991
-    default.custom: 1711086668
-    flypy.custom: 0
-    flypy.schema: 1679453704
+    default.custom: 1711087272
+    flypyplus.custom: 0
+    flypyplus.schema: 1679453633
     key_bindings: 1675621991
     key_bindings.custom: 0
     punctuation: 1675621991
@@ -186,10 +186,10 @@ schema:
   author:
     - "方案设计：何海峰 <flypy@qq.com>"
   description: |
-    小鹤音形主码表
+    小鹤音形主码表+隐藏全码
 
-  name: "小鹤音形"
-  schema_id: flypy
+  name: "小鹤音形+"
+  schema_id: flypyplus
   version: 10.5
 simplification:
   opencc_config: s2tw.json
@@ -211,10 +211,11 @@ switches:
   - name: full_shape
   - name: simplification
     reset: 0
+    states: ["简", "繁"]
   - name: ascii_punct
     reset: 0
 translator:
-  dictionary: flypy
+  dictionary: flypyplus
   disable_user_dict_for_patterns:
     - "^z.*$"
   enable_charset_filter: false
