@@ -2,8 +2,8 @@ __build_info:
   rime_version: 1.8.5
   timestamps:
     default: 1675621991
-    default.custom: 1711087272
-    flypyplus.custom: 0
+    default.custom: 1712482210
+    flypyplus.custom: 1712482537
     flypyplus.schema: 1679453633
     key_bindings: 1675621991
     key_bindings.custom: 0

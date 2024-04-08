@@ -1,7 +1,7 @@
 patch:
   schema_list:
     - schema: double_pinyin_flypy
-    #- schema: flypy # 添加小鹤音形
+    #- schema: flypyplus # 添加小鹤音形
     - schema: xhup_express
     - schema: luna_pinyin_simp
   switcher/hotkeys:
