@@ -1,0 +1,12 @@
+# Rime user dictionary
+#@/db_name	flypyplus
+#@/db_type	userdb
+#@/rime_version	1.8.5
+#@/tick	12
+#@/user_id	de2906ef-e74d-4ea7-bed0-6466917abe46
+a 	啊	c=3 d=2.98506 t=11
+bua 	不	c=1 d=1 t=7
+j 	就	c=1 d=1 t=5
+nihc 	你好	c=2 d=1.96079 t=12
+u 	是	c=1 d=1 t=6
+yiyh 	一样	c=1 d=1 t=8
