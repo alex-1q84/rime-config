@@ -1,7 +1,7 @@
 patch:
   style:
-    color_scheme: mritd_dark
-      #color_scheme: mojave_dark2
+    #color_scheme: mritd_dark
+    color_scheme: apathy
 
   preset_color_schemes:
     mojave_dark2:
