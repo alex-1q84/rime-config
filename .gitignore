@@ -1,5 +1,10 @@
 # Rime
 user.yaml
+*.bin
+*.reverse.bin
+*.prism.bin
+*.table.bin
+*.userdb.txt
 LOG
 */LOG
 */LOG.old
