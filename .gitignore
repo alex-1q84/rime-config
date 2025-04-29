@@ -9,4 +9,6 @@ LOG
 */LOG
 */LOG.old
 build/*
+sync/*
+
 .aider*
