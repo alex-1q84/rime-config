@@ -22,3 +22,6 @@ sync/*
 
 # 开发工具
 .aider*
+
+# 配置工具 SCT
+.sct/
