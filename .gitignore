@@ -1,11 +1,14 @@
 # Rime 自动生成文件
+installation.yaml
 user.yaml
-#*.reverse.bin
-#*.prism.bin
-#*.table.bin
-#*.userdb.txt
+*.bin
+*.reverse.bin
+*.prism.bin
+*.table.bin
+*.userdb.txt
 *.userdb.kct
 *.userdb.kct.sig
+tmp/
 *.tmp
 *.bak
 LOG
@@ -16,7 +19,9 @@ sync/*
 
 # 用户数据库目录
 *.userdb/
-#*.userdb/*
 
 # 开发工具
 .aider*
+
+# 配置工具 SCT
+.sct/
